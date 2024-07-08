@@ -65,4 +65,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 
-Developed with ❤️ by [Сухас Дхолз](https://github.com/GTekSD) for [GTekSD](https://github.com/GTekSD/).
+Developed with ❤️ by [Сухас Дхолз](https://gteksd.github.io/) for [GTekSD](https://github.com/GTekSD/).
