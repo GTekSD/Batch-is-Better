@@ -214,17 +214,3 @@ Tools involved:
 This shows **real pentest integration**.
 
 ---
-
-# Pro Tip
-
-If you also add **one feature**, Kali will take it more seriously:
-
-```
-bisb --threads 20 "curl -I" urls.txt
-```
-
-Parallel execution = big improvement.
-
----
-
-If you want, I can also help you write **the exact reply message to Kali maintainers** so they **reopen your request** instead of closing it again. That part is important.
